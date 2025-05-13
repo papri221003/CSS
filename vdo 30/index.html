@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variable</title>
+    <style>
+        :root{  /*global variable*/
+            --colour:rgb(8, 95, 22);
+            --secolour:rgb(115, 255, 0);/*not only colour,css variable also can hold others properties also*/
+            --defpad:40px;
+            --defmarg:10px;
+            --defop:0.4;
+        }
+        .nav{
+            background-color: var(--colour);
+        }
+        ul{
+            display: flex;
+            padding:10px;
+            margin:var(--defmarg);
+            opacity: var(--defop);
+
+        }
+        ul li{
+            list-style: none;
+            margin:10px;
+            padding:var(--defpad);
+           background-color: var(--coloursec, brown);/*it will find --coloursec variable if it is absent then it will coloured it as brown*/
+            border: 3px solid black;
+        }
+        ul li:first-child{
+            list-style: none;
+            margin:10px;
+            padding:20px;
+            background-color: var(--secolour);
+            border: 3px solid black;
+        }
+        .container{
+            --secolour:rgb(113, 164, 241);/*local variable*/
+            background-color: var(--secolour);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>address</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nihil ipsam optio alias ducimus recusandae harum id beatae minima expedita nostrum perferendis sapiente tempore, reprehenderit laudantium pariatur voluptatum odio consequuntur. Voluptatem provident distinctio aliquam voluptates explicabo cumque modi harum fugit, ut corrupti eos, deserunt quas repellendus sit ullam quisquam quis illo. Porro.
+    </div>
+</body>
+</html>

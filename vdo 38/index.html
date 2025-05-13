@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Flexbox</title>
+    <style>
+        .container{
+              border: 3px solid black;
+              display:flex;
+              /*align-items: center; /* verticaly center*/
+              align-items:center ; /*when we have multiple lines we use align content....when we have just one line we use align citem*/
+              justify-content:space-around; /*thus diff things are there*/
+              height: 70vh;
+              /*justify-content: center; /*horizontally center*/
+             /* flex-direction: column;*/
+              flex-wrap: wrap;
+              flex-direction: row-reverse;
+              gap:3px;
+              column-gap:45px;
+              row-gap : 10px;
+              .order-1{
+                order: 1;
+              }
+              .order-2{
+                order: 2;
+              } !--as default order zero so it will come 3rd--!
+              flex-shrink: 2;
+              
+            }
+        .item{
+            
+            width:60px;
+            height:90px;
+            border: 2px solid black;
+            margin: 20px;
+            background-color:green;
+            
+
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+    <div class="container">
+         <div class="item ">12</div>
+         <div class="item order 2">44</div>
+         <div class="item order 1" >66</div>
+          
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         <div class="item"></div>
+         
+      
+    </div>
+</main>
+</body>
+</html>

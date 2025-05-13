@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            width: 80vw;
+            height: 38vh;
+            padding: 9px;
+            margin: 10px;
+        }
+
+        .box1 {
+            background-color: rgb(15, 255, 255);
+            position: sticky;
+            top:0px;
+            padding: 0px;
+            height:111px;
+            margin:0px;
+            z-index:4;
+
+        }
+
+        .box2 {
+            background-color: rgb(241, 195, 135);
+            position: relative;
+            top: 100px;
+            left: 8px;
+            
+        }
+
+        .box3 {
+            background-color: rgb(243, 170, 74);
+            position: relative;
+            top: 100px;
+            left: 89px;
+        }
+
+        .box4 {
+            background-color: rgb(245, 142, 7);
+            position: absolute; /*possition abs. means it will possitioned relative to first one(html body)......means it will positioned w.r.t the most nearest possitioned element .....if parent it self possitioned then it will possitioned wrt the parent*/
+            top:-0px;
+            left:80px;
+        }
+        /*.box5 {
+            background-color: rgb(75, 39, 4);position:fixed;
+            top:10px;
+            height: 50px;/*ax the possiotion is fixed so that it will fixed if i change the class box also it will not applicable for box4 class as it is fixed possition*/
+
+
+        }
+
+        .parent{
+            padding:210px;
+            margin:40px;
+            border:3px solid black;
+            background-color: rgb(143, 137, 129);
+            position:absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+
+</html>

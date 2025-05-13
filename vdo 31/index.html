@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(164, 206, 235);
+        }
+        @media screen and (orientation:landscape) {
+            body{
+            border:5px solid white;
+            }
+            
+        }
+
+        /*@media not|only meadiatype and(expression){css code}*/
+        @media only screen and (max-width: 455px)
+        /*when there is any screen device it will applicable like monitor phone etc*/
+            {
+            body {
+                background-color: blueviolet;
+                /*when width hight than 655 then it will initial clr when less than that 655 then it will violet*/
+
+            }
+
+            .boxes {
+                background-color: black;
+                flex-direction: column;
+            }
+
+        }
+
+        .boxes {
+            display: flex;
+        }
+
+
+        .box {
+            background-color: rgb(212, 133, 29);
+            margin: 20px;
+            padding: 70px;
+            border: 3px solid rgb(1, 32, 1);
+            height: 8vh;
+            width: 9vw;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione.
+    </div>
+    <div class="boxes">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+</body>
+
+</html>

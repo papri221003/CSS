@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: aliceblue;
+        }
+    h1.yellow{
+        background-color:maroon;
+    }
+    .yellow{/*specificity 10*/
+        background-color:yellow;
+    }
+    .cred{/*specificity 10*/
+        background-color: red;
+    }
+    .cpurp{/*specificity 10*/
+        background-color: purple;
+    }
+     [data-x=a]{ /*attribute selector*//*specificity 10*/
+        background-color: aqua;
+     } /*will apply last one as the same type selector and which is last that is applicable*/
+    </style>
+</head>
+<body>
+    <h1 class="yellow cred cpurp" data-x="a">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis!
+    </h1>
+</body>
+</html>

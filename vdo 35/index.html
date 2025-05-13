@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css more on Selectors</title>
+    <style>
+     /*.box:first-child{
+        background-color: aqua;
+     }
+     .box::first-letter{
+        color: blue;
+        
+     }
+     .box{
+        border:2px solid black
+     }
+     .box,[data-colour="primary"]/*both for box class and data-colour class
+     {
+        margin-top: 50px;
+       
+     }*/
+     .box::first-letter{
+        color: blue;
+        font-size: 36px;
+        
+     }
+     
+     .boxes::after{
+        content: "I Am An Engineer";
+        color:rgb(255, 0, 0)
+     }
+     .boxes::before{
+        content: "I want to An Engineer";
+        color:rgb(4, 238, 4);
+     }
+     ::selection{
+        color:rgb(46, 3, 3);
+        background-color: black;
+     }
+     input::placeholder{
+        
+     }
+
+     
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-colour="primary" class="box">Hey! I am a first box </div>
+        <div class="box">Hey! I am a box </div>
+        <div class="box">Hey! I am a box </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+       
+        /*Class selector*/
+        .red{
+            background-color: rgb(83, 161, 230);
+        }
+
+        /*Id Selector*/
+      #green{
+        background-color: cadetblue;
+      }
+      /*Child selector*/
+      div > p{  /*p is directly attached with div means p is the direct child of div */
+        color: rgb(109, 8, 8);
+        background-color: aquamarine;
+      }
+      /* Decent selector*/
+      /*div p{ 
+        color: black;
+        background-color: blanchedalmond;
+        */
+        /*p is just under the div ..no matter it is directly a child of div or not just it is decent of div */
+      }
+      /*Univesal selector*/
+      *{
+        margin: 0ch;
+        padding-top: 0dvb;
+      }
+      /*pseudo selector*/
+      a:visited{
+        color: rgb(255, 81, 0);
+      }
+      a:link{
+        color: rgb(26, 204, 26);
+        background-color: brown;
+      }
+      a:active{
+        background-color: aquamarine;
+      }
+      a:hover{
+        background-color: blue;
+      }
+
+    </style><!--Element Selector-->
+</head>
+<body>
+   <div class="red">
+    I Am a selector
+    
+   </div>
+   <div>
+    <p>
+        hello!!
+    </p>
+    <p>
+      hiiii
+    </p>
+   </div>
+   <div id="green">
+    I am a Learner
+    <article>
+    <p>
+        I am a paragraph
+    </p>
+   </article>
+   </div>
+   <h4>
+   <a href="http://www.google.com">Open Google</a>
+   <div>
+   <a href="http://www.facebook.com">Open facebook</a>
+   </div>
+   </h4> 
+</body>
+</html>
