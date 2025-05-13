@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(2 9 36);
+            color: rgb(246, 236, 236);
+            font-family: "Poppins", serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(11 5 56);
+            ;
+        }
+
+        .left {
+            font-size: 28px;
+        }
+
+        .right {
+            font-size: 17px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(224, 84, 246);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #1462af;
+            height: 5px;
+            margin: 25px 0px;
+
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 80px 0px;
+            padding: 45px;
+        }
+
+        .leftsection {
+            font-size: 3rem;
+            color: white;
+            width: 80%;
+            margin: 74px;
+
+
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background-color: #030826;
+            color: white;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+        .leftsection .btn:hover{
+            color: rgb(224, 84, 246);
+            font-size: 1.02rem; 
+        }
+
+        .leftsection .button {
+            padding: 20px 0px;
+        }
+
+
+        .rightsection img {
+
+            width: 70%;
+            margin: 20px;
+        }
+
+        .purple {
+            color: rgb(161, 87, 231);
+        }
+
+        #element {
+            color: rgb(161, 87, 231); //for css styling in id we use #//
+        }
+
+        .secondsection {
+            width: 85%;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 20px;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        .box {
+            width: 80vw;
+            background-color: white;
+            height: 0.1vh;
+            margin: 80px 0px;
+            display: flex;
+            justify-content: left;
+        }
+
+        .vertical {
+            height: 09vh;
+            width: 0.1vw;
+            background-color: white;
+            margin: 0px 255px;
+        }
+
+        .imagetop {
+            width: 44px;
+            position: relative;
+            top: -50px;
+            left: -20px;
+        }
+
+        .firstedu {
+            font-size: 35px;
+            position: relative;
+            top: 32px;
+            left: -22px;
+            color: #8e8ec5;
+
+        }
+
+        .fisrtdesc {
+            font-size: 18px;
+            position: relative;
+            top: 30px;
+            width: 10vw;
+            left: -23px;
+        }
+
+        .seconddesc {
+            font-size: 18px;
+            position: relative;
+            top: 30px;
+            width: 12vw;
+            left: -23px;
+        }
+
+        .thirddesc {
+            font-size: 18px;
+            position: relative;
+            top: 30px;
+            width: 15vw;
+            left: -23px;
+        }
+
+        .year {
+            font-size: 20px;
+            color: #7083cd;
+        }
+
+        footer {
+
+            background: #030e3a;
+
+        }
+
+        .footerclass>div {
+            width: 120px;
+
+        }
+
+        .footerclass {
+            display: flex;
+            justify-content: space-evenly;
+
+            padding: 20px 0px;
+        }
+
+        .footer-first {
+            font-size: 22px;
+
+        }
+
+        .footerclass ul {
+            list-style: none;
+        }
+
+        footer .footerlast {
+            color: grey;
+            padding: 10px 0px;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Papri's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">Hi, My name is <span class="purple">Papri</span>
+                <div>
+                    and I'm a passionate
+                </div>
+
+                <!-- Element to contain animated typing -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">
+                        <b>Downlod Resume</b>
+                    </button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="imggg.jpg" alt="">
+            </div>
+        </section>
+        <section class="secondsection">
+            <hr>
+            <span class="text-grey">What I have done so far</span>
+            <h1>Education</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="imagetop" src="p2.png" alt="">
+                    <div class="firstedu">
+                        10th Standard
+                        <div class="year">
+                            2020
+                        </div>
+                    </div>
+                    <div class="fisrtdesc">
+                        Completed my 10th from Hiralal Pal Girls' high School and secured 94%marks.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="imagetop" src="p2.png" alt="">
+                    <div class="firstedu">
+                        12th Standard
+                        <div class="year">
+                            2022
+                        </div>
+                    </div>
+                    <div class="seconddesc">
+                        Completed my 12th from the same school Hiralal Pal Girls' high School and secured 92%marks
+                        from West bengal Board of Higher Secondary education.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="imagetop" src="p2.png" alt="">
+                    <div class="firstedu">
+                        College
+                        <div class="year">
+                            2022-23
+                        </div>
+                    </div>
+                    <div class="thirddesc">
+                        Currently I'm pursuing B.Tech degree in Electronics and Communication Engineering From Techno
+                        Main Salt Lake.I've Already completed my 2years of this course with 8.21 and 8.8 Ygpa Marks
+                        respectively.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerclass">
+            <div class="footer-first">
+                Papri's Developer Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>About</li>
+                    <li>contact</li>
+                    <li>adress</li>
+                    <li>email id</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>About</li>
+                    <li>contact</li>
+                    <li>adress</li>
+                    <li>email id</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>About</li>
+                    <li>contact</li>
+                    <li>adress</li>
+                    <li>email id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerlast">
+            Copyright&#169;Papri's Portfolio||All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic designer', 'and a Video edittor.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
